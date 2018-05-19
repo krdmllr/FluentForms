@@ -1,34 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using FluentForms.Demo.Pages;
+using FluentForms.Extensions;
 using Xamarin.Forms;
 
 namespace FluentForms.Demo
 {
-	public partial class App : Application
-	{
-		public App ()
-		{
-			InitializeComponent();
+    public partial class App
+    {
+        public App()
+        {
+            InitializeComponent();
 
-			MainPage = new FluentForms.Demo.MainPage();
-		}
-
-		protected override void OnStart ()
-		{
-			// Handle when your app starts
-		}
-
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
-
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
-	}
+            //return; //uncomment this to show the calculator app :)
+            MainPage = new TabbedPage
+            {
+                Children =
+                {
+                    new LoginPage(),
+                    new CalculatorPage()
+                    //TODO More samples
+                }
+            }.Title("FluentForms samples").InsideNavigationPage();
+        }
+    }
 }
