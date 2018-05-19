@@ -8,4 +8,9 @@
     <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="FluentViews\Layouts\" />
+    <Folder Include="FluentViews\Pages\" />
+  </ItemGroup>
+
 </Project>
