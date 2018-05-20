@@ -2,7 +2,7 @@
 using FluentForms.FluentViews.Views;
 using Xamarin.Forms;
 
-namespace FluentForms.Demo
+namespace FluentForms.Demo.Pages
 {
     public class CalculatorPage : ContentPage
     {
